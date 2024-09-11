@@ -4,9 +4,16 @@
 #
 # @example
 #   include profile::mysql_server
-class profile::mysql_server (String $mysql_root_password) {
+class profile::mysql_server (
+  #
+  #  The root password for the MySQL server.
+  #  @param String $mysql_root_password The root password for the MySQL server.
+  #  Default value is "default password".
+  #  
+  String $mysql_root_password = "default password"
+) {
   class { 'mysql::server':
-    root_password           => 'Saving passwords in code is smart.',
+    root_password           => $mysql_root_password,
     remove_default_accounts => true,
     restart                 => true,
   }
