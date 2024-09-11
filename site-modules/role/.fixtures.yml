@@ -4,3 +4,4 @@
 fixtures:
   symlinks:
     profile: "#{source_dir}/../profile"
+    mysql: "#{source_dir}/../profile/spec/fixtures/modules/mysql"
