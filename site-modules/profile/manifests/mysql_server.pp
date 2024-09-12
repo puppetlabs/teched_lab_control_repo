@@ -17,4 +17,23 @@ class profile::mysql_server (
     remove_default_accounts => true,
     restart                 => true,
   }
+
+  $my_cnf = "#
+  # This group is read both both by the client and the server
+  # use it for options that affect everything
+  #
+  [client-server]
+
+  #
+  # include all files from the config directory
+  #
+  !includedir /etc/my.cnf.d
+  "
+
+  file { '/etc/my.cnf':
+    ensure  => file,
+    owner   => 'root',
+    group   => 'root',
+    content => $my_cnf,
+  }
 }
