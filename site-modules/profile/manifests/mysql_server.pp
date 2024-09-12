@@ -10,7 +10,7 @@ class profile::mysql_server (
   #  @param String $mysql_root_password The root password for the MySQL server.
   #  Default value is "default password".
   #  
-  String $mysql_root_password = "default password"
+  String $mysql_root_password = 'default password'
 ) {
   class { 'mysql::server':
     root_password           => $mysql_root_password,
