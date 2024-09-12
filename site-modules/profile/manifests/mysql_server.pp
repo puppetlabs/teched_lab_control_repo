@@ -28,13 +28,13 @@ class profile::mysql_server (
 # include all files from the config directory
 #
 !includedir /etc/my.cnf.d
-  "
+"
 
   file { '/etc/my.cnf':
     ensure  => file,
     owner   => 'root',
     group   => 'root',
     content => $my_cnf,
-    notify => Class['mysql::server'],
+    notify => Class['mysql::server::service'],
   }
 }
