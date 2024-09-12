@@ -19,15 +19,15 @@ class profile::mysql_server (
   }
 
   $my_cnf = "#
-  # This group is read both both by the client and the server
-  # use it for options that affect everything
-  #
-  [client-server]
+# This group is read both both by the client and the server
+# use it for options that affect everything
+#
+[client-server]
 
-  #
-  # include all files from the config directory
-  #
-  !includedir /etc/my.cnf.d
+#
+# include all files from the config directory
+#
+!includedir /etc/my.cnf.d
   "
 
   file { '/etc/my.cnf':
@@ -35,5 +35,6 @@ class profile::mysql_server (
     owner   => 'root',
     group   => 'root',
     content => $my_cnf,
+    notify => Class['mysql::server'],
   }
 }
