@@ -12,8 +12,6 @@ if [ ! -d /etc/puppetlabs/puppet ]; then
    mkdir /etc/puppetlabs/puppet
 fi
 cat > /etc/puppetlabs/puppet/csr_attributes.yaml << YAML
-custom_attributes:
-    1.2.840.113549.1.9.7: mySuperAwesomePassword
 extension_requests:
     pp_role: database_server
     pp_environment: production
