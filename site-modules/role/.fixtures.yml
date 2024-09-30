@@ -6,3 +6,5 @@ fixtures:
     profile: "#{source_dir}/../profile"
     mysql: "#{source_dir}/../profile/spec/fixtures/modules/mysql"
     stdlib: "#{source_dir}/../profile/spec/fixtures/modules/stdlib"
+    apache: "#{source_dir}/../profile/spec/fixtures/modules/apache"
+    concat: "#{source_dir}/../profile/spec/fixtures/modules/concat"

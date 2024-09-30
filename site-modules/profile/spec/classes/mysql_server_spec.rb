@@ -20,6 +20,14 @@ describe 'profile::mysql_server' do
           .with_remove_default_accounts(true)
           .with_restart(true)
       end
+
+      it 'creates a mysql conf file' do
+        is_expected.to contain_file('/etc/my.cnf')
+        .with_ensure('file')
+        .with_owner('root')
+        .with_group('root')
+        .with_notify('Class[Mysql::Server::Service]')
+      end
     end
   end
 end
