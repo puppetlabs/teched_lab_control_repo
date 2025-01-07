@@ -1,9 +1,6 @@
-# @summary A short summary of the purpose of this class
+# Copyright 2025. Puppet, Inc., a Perforce company.  
 #
-# A description of what this class does
-#
-# @example
-#   include profile::mysql_server
+# This profile creates a MySQL server and sets the root password as given.
 class profile::mysql_server (
   #
   #  The root password for the MySQL server.

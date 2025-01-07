@@ -1,9 +1,6 @@
-# @summary A short summary of the purpose of this class
+# Copyright 2025. Puppet, Inc., a Perforce company.  
 #
-# A description of what this class does
-#
-# @example
-#   include role::default
+# This role is the default for all nodes, and includes only the base profile.
 class role::default {
   include profile::base
 }

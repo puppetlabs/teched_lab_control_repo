@@ -1,9 +1,7 @@
-# @summary A short summary of the purpose of this class
+# Copyright 2025. Puppet, Inc., a Perforce company.  
 #
-# A description of what this class does
-#
-# @example
-#   include role::web_server
+# This profile builds a web server with Apache.
+# All roles should include the base profile.
 class role::web_server {
   include profile::base
   include profile::apache_server
