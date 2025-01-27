@@ -8,3 +8,8 @@ fixtures:
     stdlib: "#{source_dir}/../profile/spec/fixtures/modules/stdlib"
     apache: "#{source_dir}/../profile/spec/fixtures/modules/apache"
     concat: "#{source_dir}/../profile/spec/fixtures/modules/concat"
+    h0tw1r3-gitea: "#{source_dir}/../profile/spec/fixtures/modules/gitea"
+    inifile: "#{source_dir}/../profile/spec/fixtures/modules/inifile"
+    archive: "#{source_dir}/../profile/spec/fixtures/modules/archive"
+    extlib: "#{source_dir}/../profile/spec/fixtures/modules/extlib"
+    systemd: "#{source_dir}/../profile/spec/fixtures/modules/systemd"
