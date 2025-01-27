@@ -8,6 +8,9 @@ mod 'puppetlabs-stdlib', '9.6.0'
 mod 'puppetlabs-apache', '12.1.0'
 mod 'puppetlabs-concat', '9.0.2'
 
+# Gitea Module
+mod 'h0tw1r3-gitea', '3.3.0'
+
 # Lab Tests Module
 mod 'teched_lab_tests',
     :git => 'https://github.com/puppetlabs/teched_lab_tests.git',
