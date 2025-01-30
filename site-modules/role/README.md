@@ -9,7 +9,7 @@ To specify a role for a node, include the `pp_role` extension in the node's CSR:
 ```
 #!/bin/sh
 if [ ! -d /etc/puppetlabs/puppet ]; then
-   mkdir /etc/puppetlabs/puppet
+   mkdir -p /etc/puppetlabs/puppet
 fi
 cat > /etc/puppetlabs/puppet/csr_attributes.yaml << YAML
 extension_requests:
