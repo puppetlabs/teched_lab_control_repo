@@ -3,7 +3,26 @@
 ---
 fixtures:
   forge_modules:
-    mysql: "puppetlabs/mysql"
-    stdlib: "puppetlabs/stdlib"
-    apache: "puppetlabs/apache"
-    concat: "puppetlabs/concat"
+    mysql: 
+      repo: "puppetlabs/mysql"
+    stdlib: 
+      repo: "puppetlabs/stdlib"
+    apache: 
+      repo: "puppetlabs/apache"
+    concat: 
+      repo: "puppetlabs/concat"
+    h0tw1r3-gitea: 
+      repo: "h0tw1r3/gitea"
+      ref: "3.3.0"
+    inifile:
+      repo: "puppetlabs/inifile"
+      ref: "6.2.0"
+    archive:
+      repo: "puppet/archive"
+      ref: "7.1.0"
+    extlib:
+      repo: "puppet/extlib"
+      ref: "7.3.0"
+    systemd:
+      repo: "puppet/systemd"
+      ref: "8.1.0"
