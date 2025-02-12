@@ -11,7 +11,7 @@ fixtures:
       repo: "puppetlabs/apache"
     concat: 
       repo: "puppetlabs/concat"
-    h0tw1r3-gitea: 
+    gitea: 
       repo: "h0tw1r3/gitea"
       ref: "3.3.0"
     inifile:
