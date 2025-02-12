@@ -9,8 +9,6 @@ describe 'profile::gitea_server' do
 
       it { is_expected.to compile.with_all_deps }
       it { is_expected.to contain_class('gitea')}
-<<<<<<< HEAD
-=======
 
       it do
         is_expected.to create_user('git').with(
@@ -19,7 +17,6 @@ describe 'profile::gitea_server' do
         )
       end
       
->>>>>>> main
     end
   end
 end
